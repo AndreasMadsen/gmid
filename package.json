@@ -12,9 +12,12 @@
     "url": "git://github.com/AndreasMadsen/isme.git"
   },
   "keywords": [
-    "ip",
-    "address",
-    "match"
+    "unique",
+    "hash",
+    "pid",
+    "id",
+    "random",
+    "increasement"
   ],
   "devDependencies": {
     "tap": "0.3.x"
