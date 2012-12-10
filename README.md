@@ -1,4 +1,4 @@
-#isme
+#gmid
 
 > Creates an overcomplicated none standard unique ID.
 
