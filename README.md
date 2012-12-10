@@ -10,11 +10,12 @@ npm install gmid
 
 ## Documentation
 
-`gmid` is a function there returns a 46 digest unique hex string.
+`gmid` is a function there returns a 52 digest unique hex string.
 
 * 32 digest is the computer name `os.hostname()`.
 * 6 digest is the pid.
-* 8 digest is random.
+* 8 digest is random, but only updates when the increasement counter resets.
+* 6 digest is an increasement counter.
 
 ```JavaScript
   var gmid = require('gmid');

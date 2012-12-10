@@ -2,9 +2,16 @@
 var test = require('tap').test;
 var gmid = require('./gmid.js');
 
+var generated = [];
+
 test('localhost is me', function(t) {
-  for (var i = 0; i < 10; i++) {
-    t.equal(gmid().length, 46);
+  var value = null;
+
+  for (var i = 0; i < 1000; i++) {
+    value = gmid();
+    t.equal(generated.indexOf(value), -1);
+    t.equal(value.length, 52);
+    generated.push(value);
   }
 
   t.end();
